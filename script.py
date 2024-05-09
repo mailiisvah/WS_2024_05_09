@@ -1,15 +1,10 @@
 import sys
-import argparse
+import os
 
 print("hello world")
 
-parser= argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('integers', metavar='N', type=int, nargs='+',
-                    help='an integer for the accumulator')
-
-
-args = parser.parse_args()
-
-print(args.integers)
-print(sum(args.integers)
-      )
+print("What is the sum of 2 + 2?")
+#read the answer from the user
+answer = input()
+#print the answer
+print("You answered:" + answer)
